@@ -15,17 +15,17 @@ public class Wspolny {
         wydawnictwo="";
         Wartosc=0;
     }
-    public Wspolny(int nId,String aut, String wyd, double wyceniana){
+    public Wspolny(int nId,String aut, String wyd, double wycena){
         numerID=nId;
         autor=aut;
         wydawnictwo = wyd;
-        Wartosc=wyceniana;
+        Wartosc=wycena;
     }
     
     public static double kara (boolean wypozyczenie, Date dataRozpoczecia){
       double  kara =0;
     if (wypozyczenie==true){
-       Date dataObecna = new Date (2020,03,20);
+       Date dataObecna = new Date (2020,03,25);
         int ilosc=(int)roznica(dataRozpoczecia,dataObecna);
         if (ilosc>30){
             int dniPonad=ilosc-30;
