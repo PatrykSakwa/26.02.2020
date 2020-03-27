@@ -1,0 +1,5 @@
+Zostały stworzone klasy Audiobooki, ebooki, filmy, ksiazki, plyty muzyczne, uzytkownik, wspolny
+Obiektami są Coelho, Sienkiewicz, Jankiewicz
+W programie żeby poprawnie działał trzeba ustawić ręcznie datę obecną.
+Kara jest nalicza powyżej 30 dni od czasu wypożyczenia.
+Stworzono klasę uzytknownik w ktorym opisane sa dane uzytknownika
