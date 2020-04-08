@@ -1,0 +1,5 @@
+Na początku program tworzy 200 losowych liczb i zapisuje je w tablicy.
+Następnie program pyta się użytkownika które sortowanie ma zastosować i czeka na wybór.
+Jeśli użytkownik wybierze b to program posortuje liczby sortowaniem babelkowym, jeśli k to użyje sortowania kubełkowego.
+Stworzono 4 interfejsy: Sortowalne, sortowanie, sortowanieKubelkowe, sortowanieBabelkowe.
+Metoda kroki zwraca ilość wykonanych porównań
