@@ -1,7 +1,7 @@
 package sortowanie;
 
 
-public interface Sortowalne {
+public interface Sortable {
     int[] sort(int[]tab);
     double kroki();
 }

@@ -1,7 +1,7 @@
 
 package sortowanie;
 
-public class SortowanieBabelkowe implements Sortowalne {
+public class SortowanieBabelkowe implements Sortable {
     int liczbaPorownan = 0;
     @Override
     public int[] sort(int[] tab) {

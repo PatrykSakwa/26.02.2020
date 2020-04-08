@@ -1,7 +1,7 @@
 
 package sortowanie;
 
-public class SortowanieKubelkowe implements Sortowalne {
+public class SortowanieKubelkowe implements Sortable {
     int liczbaPorownan = 0;
   
     @Override
