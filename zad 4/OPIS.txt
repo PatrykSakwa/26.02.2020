@@ -1,0 +1,68 @@
+Zad 2: 
+Wykorzystałem try przy użyciu Integer.parseInt()
+Po konwersji pojawia się informacja o zakończeniu działania.
+
+package patryk;
+import java.util.Scanner;
+
+
+public class Patryk {
+   
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj prosze co chcesz przekonwertowac na int");
+        String znaki=scan.nextLine();
+        try {
+        int konwersja=Integer.parseInt(znaki);
+        System.out.println("Poprawnie przekonwertowano "+ konwersja );  
+        }
+        catch (NumberFormatException exception){
+            System.out.println("Nieprawidlowy typ błąd: "+ exception);
+        }
+        finally {
+            System.out.println("Zakonczono probe konwersji");
+        }
+        
+        
+    }
+    
+}
+
+
+
+Zad 3:
+Stworzyłem tablicę 20-elementową, następnie przy pomocy catch wyłapywany jest wyjątek. Na zakonczenie, uzytkownik jest informowany o  zakońćzeniu działania programu. 
+ 
+
+package patryk;
+import java.util.Scanner;
+
+
+public class Patryk {
+   
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int [] tablica = new int [20];
+        for (int x=0; x<tablica.length; x++){
+            tablica[x]=x*15+2;
+        }
+        System.out.println("Podaj prosze ktory element tablicy 20-elementowej chcesz wyswietlic");
+        String element=scan.nextLine();
+        try {
+        int elementTablicy=Integer.parseInt(element);
+        System.out.println("Element tablicy ktory chcesz wyswietlic "+ tablica[elementTablicy-1] );  
+        
+        }
+        catch (NumberFormatException | ArrayIndexOutOfBoundsException exception){
+            System.out.println("Nie ma takiego elementu w tablicy" );
+        }
+        finally {
+            System.out.println("Koniec dzialania programu");
+        }
+        
+        
+    }
+    
+}
